@@ -11,6 +11,6 @@ INSERT INTO EMPLOYEE_MASTER VALUES
 (1001,'Rahul','IT',2001,'Bangalore'),
 (1002,'Sneha','HR',2002,'Chennai'),
 (1003,'Arjun','Finance',2003,'Hyderabad'),
-(1004,'Kiran','IT',2001,'Bangalore')
+(1004,'Kiran','IT',2001,'Bangalore'),
 (1005,'Naman','IT',2003,'Bangalore')
 ;
