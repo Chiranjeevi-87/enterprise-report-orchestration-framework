@@ -1,0 +1,18 @@
+CREATE OR REPLACE TABLE EMAIL_NOTIFICATION_LOG
+(
+EMAIL_TO STRING,
+SUBJECT STRING,
+MESSAGE STRING,
+STATUS STRING,
+SENT_TIME TIMESTAMP
+);
+
+INSERT INTO EMAIL_NOTIFICATION_LOG
+VALUES
+(
+'operations_team@company.com',
+'Report Generation Success',
+'Employee report completed successfully',
+'SENT',
+CURRENT_TIMESTAMP()
+);
