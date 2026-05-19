@@ -1,27 +1,33 @@
 # Process Flow
-
 Step 1:
-Load employee and absence source data.
+Source employee and absence data are loaded into Snowflake tables.
 
 Step 2:
-Store report definitions inside REPORT_METADATA table.
+Business report definitions are maintained inside REPORT_METADATA.
 
 Step 3:
-User executes procedure:
-
-CALL GENERATE_REPORT(1);
+Security mappings determine user access hierarchy.
 
 Step 4:
-Procedure reads metadata table.
+Stored procedure reads report metadata.
 
 Step 5:
-Dynamic SQL executes based on metadata.
+Dynamic SQL executes based on metadata configuration.
 
 Step 6:
-Output table gets generated.
+Output report tables are generated.
 
 Step 7:
-Execution details are inserted into log table.
+Execution details are inserted into EXECUTION_LOG table.
 
 Step 8:
+Notification framework records execution status.
+
+Step 9:
+Streams capture incremental changes.
+
+Step 10:
+Tasks schedule automated execution.
+
+Step 11:
 Users consume generated reports.
